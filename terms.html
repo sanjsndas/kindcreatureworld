@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Terms of Service | Kind Creature World – Legal & Guidelines</title>
+    <!-- Google Fonts & Smooth Scroll -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F5F5F5;
+            color: #1E1E1E;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            --grey-50: #FAFAFA;
+            --grey-100: #F0F0F0;
+            --grey-200: #E0E0E0;
+            --grey-300: #C0C0C0;
+            --grey-700: #4A4A4A;
+            --grey-800: #2C2C2C;
+            --grey-900: #1A1A1A;
+            --yellow-primary: #F5B042;
+            --yellow-deep: #E69500;
+            --yellow-soft: #FFE8C7;
+            --shadow-sm: 0 12px 30px rgba(0,0,0,0.05);
+            --shadow-md: 0 20px 35px -12px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 28px;
+        }
+
+        header {
+            background: var(--grey-900);
+            border-bottom: 4px solid var(--yellow-primary);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .nav-bar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 0;
+        }
+
+        .logo h1 {
+            color: var(--yellow-primary);
+            font-size: 1.8rem;
+            letter-spacing: -0.5px;
+            font-weight: 700;
+        }
+        .logo span {
+            color: #E0E0E0;
+            font-weight: 400;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            color: #EAEAEA;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+        .nav-links a:hover {
+            color: var(--yellow-primary);
+        }
+
+        /* page title */
+        .page-hero {
+            background: linear-gradient(125deg, #2A2A2A 0%, #1F1F1F 100%);
+            padding: 70px 0 60px;
+            color: white;
+            text-align: center;
+        }
+        .page-hero h1 {
+            font-size: 3.2rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #FFF, var(--yellow-primary));
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 16px;
+        }
+        .page-hero p {
+            font-size: 1.2rem;
+            color: #CFCFCF;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .terms-container {
+            background: white;
+            border-radius: 32px;
+            margin: 60px auto;
+            padding: 48px 52px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 2rem 0 1rem 0;
+            color: var(--grey-900);
+            border-left: 5px solid var(--yellow-primary);
+            padding-left: 20px;
+        }
+        .section-title:first-of-type {
+            margin-top: 0;
+        }
+
+        .legal-text {
+            color: #2c2c2c;
+            font-size: 1rem;
+            margin-bottom: 1.2rem;
+            line-height: 1.6;
+        }
+        .legal-text strong {
+            color: var(--grey-900);
+            font-weight: 700;
+        }
+        .legal-list {
+            margin: 1rem 0 1.5rem 2rem;
+        }
+        .legal-list li {
+            margin-bottom: 0.6rem;
+        }
+        .highlight-box {
+            background: var(--yellow-soft);
+            border-left: 5px solid var(--yellow-primary);
+            padding: 20px 28px;
+            border-radius: 20px;
+            margin: 30px 0;
+        }
+        .update-badge {
+            background: var(--grey-200);
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--grey-800);
+            margin-bottom: 20px;
+        }
+        hr {
+            margin: 30px 0;
+            border: 0;
+            height: 1px;
+            background: var(--grey-200);
+        }
+        footer {
+            background: var(--grey-900);
+            color: #b0b0b0;
+            padding: 48px 0 32px;
+            border-top: 3px solid var(--yellow-primary);
+            margin-top: 40px;
+        }
+        .footer-inner {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+        }
+        .footer-brand h3 {
+            color: var(--yellow-primary);
+            font-size: 1.7rem;
+        }
+        .footer-contact {
+            background: #222;
+            padding: 20px 28px;
+            border-radius: 24px;
+        }
+        .footer-contact p {
+            margin: 12px 0;
+            font-size: 1.05rem;
+        }
+        .footer-contact strong {
+            color: var(--yellow-primary);
+        }
+        .copyright {
+            text-align: center;
+            padding-top: 40px;
+            margin-top: 30px;
+            border-top: 1px solid #333;
+            font-size: 0.85rem;
+        }
+        .btn-outline {
+            display: inline-block;
+            border: 2px solid var(--yellow-primary);
+            color: var(--yellow-primary);
+            background: transparent;
+            padding: 8px 20px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.2s;
+        }
+        .btn-outline:hover {
+            background: var(--yellow-primary);
+            color: #1E1E1E;
+        }
+        @media (max-width: 780px) {
+            .nav-links { gap: 1rem; }
+            .page-hero h1 { font-size: 2.3rem; }
+            .terms-container { padding: 28px 20px; }
+            .section-title { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="nav-bar">
+            <div class="logo"><h1>KIND <span>CREATURE WORLD</span></h1></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="terms.html">Terms Of Privacy</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="cookies.html">Cookies Policy</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="page-hero">
+        <div class="container">
+            <h1>Terms of Service</h1>
+            <p>Clear, fair guidelines for our community – because kindness also means transparency.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="terms-container">
+            <div class="update-badge">📅 Last updated: June 4, 2026</div>
+            <p class="legal-text">Welcome to Kind Creature World (“we,” “us,” “our,” or “KCW”). By accessing or using our website (kindcreatureworld.com), mobile app, or any related services (collectively, the “Platform”), you agree to comply with and be bound by the following Terms of Service (“Terms”). Please read them carefully. If you do not agree with any part of these Terms, you must not use our Platform.</p>
+            <p class="legal-text">Kind Creature World provides educational resources, expert advice, community forums, product recommendations, and a variety of animal wellness tools. These Terms create a legally binding agreement between you and KCW. Additional policies (Privacy Policy, Cookies Policy) are incorporated by reference.</p>
+
+            <!-- 1. Use of platform -->
+            <h2 class="section-title">1. Eligibility & Account Responsibility</h2>
+            <p class="legal-text">You must be at least 16 years old to use our Platform, or have parental/guardian consent if younger. By registering an account, you agree to provide accurate, current, and complete information. You are solely responsible for maintaining the confidentiality of your login credentials and for all activities that occur under your account. Notify us immediately of any unauthorized use. KCW reserves the right to suspend or terminate accounts that violate these Terms or applicable laws.</p>
+
+            <h2 class="section-title">2. Informational Purposes Only — Not Veterinary Advice</h2>
+            <div class="highlight-box">
+                <p class="legal-text" style="margin-bottom: 0;"><strong>⚠️ Important Medical Disclaimer:</strong> All content on Kind Creature World — including articles, guides, videos, Q&A responses, and expert opinions — is intended for <strong>general informational and educational purposes only</strong>. It does NOT constitute professional veterinary medical advice, diagnosis, or treatment. Always seek the advice of a licensed veterinarian or other qualified animal health provider with any questions you may have regarding a medical condition. Never disregard professional veterinary advice or delay seeking it because of something you have read on our Platform. In case of an emergency, contact your local veterinary clinic or emergency animal hospital immediately.</p>
+            </div>
+            <p class="legal-text">Our team includes veterinary professionals, but interactions through the Platform (e.g., comments, forums, live chats) do not create a veterinarian-client-patient relationship. Reliance on any information provided by KCW is solely at your own risk.</p>
+
+            <h2 class="section-title">3. User Conduct & Community Guidelines</h2>
+            <p class="legal-text">We are proud to foster a respectful, compassionate community. You agree not to:</p>
+            <ul class="legal-list">
+                <li>Post or transmit any unlawful, abusive, defamatory, harassing, obscene, or threatening content.</li>
+                <li>Share false or misleading information about animal health, treatments, or products.</li>
+                <li>Impersonate any person or entity, including KCW staff or veterinarians.</li>
+                <li>Upload malware, viruses, or any code that could harm the Platform.</li>
+                <li>Engage in unauthorized scraping, data mining, or commercial use of our content without prior written consent.</li>
+                <li>Promote animal cruelty, neglect, or any illegal activity related to animals.</li>
+            </ul>
+            <p class="legal-text">KCW reserves the right to moderate, edit, or remove any content that violates these guidelines and to suspend or ban users who repeatedly infringe.</p>
+
+            <h2 class="section-title">4. Intellectual Property & Limited License</h2>
+            <p class="legal-text">All materials displayed on the Platform — including text, graphics, logos, icons, images, audio clips, digital downloads, and software — are the property of Kind Creature World or its content suppliers and are protected by international copyright, trademark, and other intellectual property laws. The “Kind Creature World”, “Grey & Yellow Harmony”, and related logos are registered trademarks.</p>
+            <p class="legal-text">You are granted a limited, non-exclusive, non-transferable license to access and view the content for personal, non-commercial use only. You may not reproduce, distribute, modify, create derivative works of, publicly display, or commercially exploit any portion of the Platform without our express written permission. Proper attribution is required for any permitted sharing (e.g., social media snippets).</p>
+
+            <h2 class="section-title">5. Third-Party Links & Product Recommendations</h2>
+            <p class="legal-text">Our Platform may contain links to third-party websites, retailers, or services for your convenience (e.g., recommended pet products). KCW does not endorse, guarantee, or assume responsibility for the accuracy, safety, or quality of any third-party products, services, or content. Your interactions with third parties are solely between you and them. We may earn a small affiliate commission from some product links, but this does not influence our editorial integrity. See our <a href="#" style="color: var(--yellow-deep);">Affiliate Disclosure</a> for details.</p>
+
+            <h2 class="section-title">6. Donations, Grants & Financial Transactions</h2>
+            <p class="legal-text">Kind Creature World may accept donations or offer paid educational resources (e.g., workshops, e-books). All payments are processed through secure third-party gateways. Donations are generally non-refundable unless an error occurs. For grant applications (“Kind Creature Grants”), applicants must meet eligibility criteria published at the time of application. We reserve the right to modify or cancel grant programs with reasonable notice.</p>
+
+            <h2 class="section-title">7. Disclaimer of Warranties</h2>
+            <p class="legal-text">THE PLATFORM AND ALL CONTENT ARE PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS. TO THE FULLEST EXTENT PERMITTED BY LAW, KIND CREATURE WORLD DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE PLATFORM WILL BE UNINTERRUPTED, SECURE, OR ERROR-FREE, OR THAT DEFECTS WILL BE CORRECTED.</p>
+
+            <h2 class="section-title">8. Limitation of Liability</h2>
+            <p class="legal-text">TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL KIND CREATURE WORLD, ITS DIRECTORS, EMPLOYEES, PARTNERS, OR AFFILIATES BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING OUT OF OR RELATED TO YOUR USE OF THE PLATFORM, INCLUDING BUT NOT LIMITED TO PERSONAL INJURY, PROPERTY DAMAGE, LOSS OF DATA, OR LOSS OF PROFITS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. OUR TOTAL LIABILITY SHALL NOT EXCEED $100 USD OR THE AMOUNT YOU PAID TO US IN THE PAST SIX MONTHS, WHICHEVER IS GREATER.</p>
+
+            <div class="highlight-box">
+                <p class="legal-text" style="margin-bottom: 0;"><strong>🐾 Special note to pet owners:</strong> You assume full responsibility for the safety and wellbeing of your animals. Always consult a veterinarian before changing your pet’s diet, medication, or exercise routine.</p>
+            </div>
+
+            <h2 class="section-title">9. Indemnification</h2>
+            <p class="legal-text">You agree to indemnify, defend, and hold harmless Kind Creature World and its officers, employees, and agents from and against any claims, liabilities, damages, losses, and expenses (including reasonable legal fees) arising out of or in any way connected with your breach of these Terms, your misuse of the Platform, or your violation of any law or third-party rights.</p>
+
+            <h2 class="section-title">10. Termination & Suspension</h2>
+            <p class="legal-text">We may suspend or terminate your access to the Platform at any time, with or without cause, including for violation of these Terms or harmful behavior toward our community. Upon termination, your right to use the Platform will cease immediately. Sections regarding intellectual property, disclaimers, indemnification, and limitation of liability shall survive termination.</p>
+
+            <h2 class="section-title">11. Modifications to Terms</h2>
+            <p class="legal-text">Kind Creature World reserves the right to revise these Terms at any time. Material changes will be notified via email (if you have an account) or by posting a prominent notice on our homepage. Your continued use of the Platform after any changes constitutes acceptance of the revised Terms. We encourage you to review this page periodically.</p>
+
+            <h2 class="section-title">12. Governing Law & Dispute Resolution</h2>
+            <p class="legal-text">These Terms shall be governed by and construed in accordance with the laws of the State of California, without regard to its conflict of law provisions. Any dispute arising from or relating to these Terms or your use of the Platform shall first be attempted to be resolved through good-faith negotiation. If unresolved within 60 days, the dispute shall be submitted to binding arbitration in San Francisco, CA, under the rules of the American Arbitration Association. You waive any right to participate in a class action lawsuit or class-wide arbitration.</p>
+
+            <h2 class="section-title">13. Miscellaneous</h2>
+            <p class="legal-text">If any provision of these Terms is found to be unenforceable or invalid, that provision shall be limited or eliminated to the minimum extent necessary so that the remaining provisions remain in full force and effect. Our failure to enforce any right or provision shall not be deemed a waiver of such right or provision. These Terms constitute the entire agreement between you and Kind Creature World regarding your use of the Platform.</p>
+
+            <hr>
+            <p class="legal-text"><strong>📬 Contact Us</strong><br>If you have any questions about these Terms, please reach out to our legal & compliance team:</p>
+            <p class="legal-text">Kind Creature World Legal Department<br>123 Harmony Lane, Suite 400, San Francisco, CA 94103<br>Email: <a href="mailto:legal@kindcreatureworld.com" style="color: var(--yellow-deep);">legal@kindcreatureworld.com</a><br>Phone: +1 (555) 123-4567 (ask for Compliance)</p>
+            <p class="legal-text">We strive to respond to all inquiries within 7 business days.</p>
+            <div style="margin-top: 32px; text-align: center;">
+                <a href="index.html" class="btn-outline">← Back to Home</a>
+                <a href="privacy.html" class="btn-outline" style="margin-left: 12px;">Read Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <h3>KIND CREATURE WORLD</h3>
+                <p style="max-width: 280px; margin-top: 12px;">Compassion in action — elevating pet wellness with grey stability & yellow joy. Est. 2019.</p>
+                <p style="margin-top: 16px;">🐶🐱🐰🐦</p>
+            </div>
+            <div class="footer-contact">
+                <p><strong>📍 Kind Creature World Headquarters</strong></p>
+                <p>123 Harmony Lane, Suite 400<br>San Francisco, CA 94103, USA</p>
+                <p><strong>📞 24/7 Pet Care Helpline:</strong> <a href="tel:+15551234567" style="color: var(--yellow-primary); text-decoration: none;">+1 (555) 123-4567</a></p>
+                <p><strong>📧 hello@kindcreatureworld.com</strong></p>
+                <p><strong>🕒 Mon–Sun: 8am – 10pm (Emergency always open)</strong></p>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2026 Kind Creature World — Grey & Yellow Pet Care. All images used responsibly. Our mission is rooted in transparency and love. 
+            <br>Terms of Service — last updated June 2026. For disputes or arbitration requests, please refer to Section 12.
+        </div>
+    </div>
+</footer>
+</body>
+</html>

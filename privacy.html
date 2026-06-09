@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Privacy Policy | Kind Creature World – Grey & Yellow Pet Care</title>
+    <!-- Google Fonts & Smooth Scroll -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F5F5F5;
+            color: #1E1E1E;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            --grey-50: #FAFAFA;
+            --grey-100: #F0F0F0;
+            --grey-200: #E0E0E0;
+            --grey-300: #C0C0C0;
+            --grey-700: #4A4A4A;
+            --grey-800: #2C2C2C;
+            --grey-900: #1A1A1A;
+            --yellow-primary: #F5B042;
+            --yellow-deep: #E69500;
+            --yellow-soft: #FFE8C7;
+            --shadow-sm: 0 12px 30px rgba(0,0,0,0.05);
+            --shadow-md: 0 20px 35px -12px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 28px;
+        }
+
+        /* Header */
+        header {
+            background: var(--grey-900);
+            border-bottom: 4px solid var(--yellow-primary);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .nav-bar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 0;
+        }
+
+        .logo h1 {
+            color: var(--yellow-primary);
+            font-size: 1.8rem;
+            letter-spacing: -0.5px;
+            font-weight: 700;
+        }
+        .logo span {
+            color: #E0E0E0;
+            font-weight: 400;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            color: #EAEAEA;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+        .nav-links a:hover {
+            color: var(--yellow-primary);
+        }
+
+        /* Page header (privacy) */
+        .page-header {
+            background: linear-gradient(135deg, #2A2A2A 0%, #1F1F1F 100%);
+            padding: 48px 0 56px;
+            text-align: center;
+        }
+        .page-header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            color: white;
+            letter-spacing: -0.02em;
+        }
+        .page-header h1 span {
+            color: var(--yellow-primary);
+        }
+        .page-header p {
+            color: #CFCFCF;
+            font-size: 1.2rem;
+            margin-top: 12px;
+            max-width: 720px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .last-updated {
+            background: rgba(245,176,66,0.12);
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 60px;
+            font-size: 0.85rem;
+            margin-top: 20px;
+            color: var(--yellow-primary);
+        }
+
+        /* Privacy card layout */
+        .privacy-card {
+            background: white;
+            border-radius: 48px;
+            padding: 48px 52px;
+            margin: 60px 0 70px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--grey-200);
+        }
+        .privacy-section {
+            margin-bottom: 48px;
+            scroll-margin-top: 100px;
+        }
+        .privacy-section h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--grey-900);
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-left: 5px solid var(--yellow-primary);
+            padding-left: 20px;
+        }
+        .privacy-section h3 {
+            font-size: 1.35rem;
+            font-weight: 600;
+            margin: 24px 0 12px 0;
+            color: var(--grey-800);
+        }
+        .privacy-section p {
+            margin-bottom: 16px;
+            color: var(--grey-700);
+            line-height: 1.6;
+        }
+        .privacy-section ul, .privacy-section ol {
+            margin: 16px 0 20px 28px;
+            color: var(--grey-700);
+        }
+        .privacy-section li {
+            margin-bottom: 8px;
+        }
+        .highlight-box {
+            background: var(--yellow-soft);
+            padding: 24px 28px;
+            border-radius: 28px;
+            margin: 28px 0;
+            border-left: 6px solid var(--yellow-primary);
+        }
+        .highlight-box strong {
+            color: var(--grey-900);
+        }
+        .table-of-contents {
+            background: var(--grey-100);
+            border-radius: 32px;
+            padding: 28px 32px;
+            margin-bottom: 48px;
+        }
+        .table-of-contents h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 18px;
+            color: var(--grey-900);
+        }
+        .toc-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px 28px;
+        }
+        .toc-grid a {
+            color: var(--grey-800);
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px dotted var(--grey-300);
+            transition: 0.2s;
+        }
+        .toc-grid a:hover {
+            color: var(--yellow-deep);
+            border-bottom-color: var(--yellow-deep);
+        }
+        hr {
+            margin: 28px 0;
+            border: none;
+            height: 2px;
+            background: linear-gradient(90deg, var(--yellow-primary), var(--grey-300), transparent);
+        }
+        .contact-ref {
+            background: var(--grey-900);
+            border-radius: 32px;
+            padding: 28px 32px;
+            color: #f0f0f0;
+            margin-top: 40px;
+        }
+        .contact-ref a {
+            color: var(--yellow-primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .contact-ref a:hover {
+            text-decoration: underline;
+        }
+        /* Footer */
+        footer {
+            background: var(--grey-900);
+            color: #b0b0b0;
+            padding: 48px 0 32px;
+            border-top: 3px solid var(--yellow-primary);
+        }
+        .footer-inner {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+        }
+        .footer-brand h3 {
+            color: var(--yellow-primary);
+            font-size: 1.7rem;
+        }
+        .footer-contact {
+            background: #222;
+            padding: 20px 28px;
+            border-radius: 24px;
+        }
+        .footer-contact p {
+            margin: 12px 0;
+            font-size: 1.05rem;
+        }
+        .footer-contact strong {
+            color: var(--yellow-primary);
+        }
+        .copyright {
+            text-align: center;
+            padding-top: 40px;
+            margin-top: 30px;
+            border-top: 1px solid #333;
+            font-size: 0.85rem;
+        }
+        @media (max-width: 780px) {
+            .nav-links { gap: 1rem; }
+            .page-header h1 { font-size: 2.2rem; }
+            .privacy-card { padding: 28px 20px; }
+            .container { padding: 0 20px; }
+            .privacy-section h2 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="nav-bar">
+            <div class="logo"><h1>KIND <span>CREATURE WORLD</span></h1></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="terms.html">Terms Of Privacy</a></li>
+                <li><a href="privacy.html" style="color: #F5B042;">Privacy Policy</a></li>
+                <li><a href="cookies.html">Cookies Policy</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="page-header">
+        <div class="container">
+            <h1>Privacy <span>Policy</span></h1>
+            <p>Your trust is our priority. At Kind Creature World, we protect your personal data as fiercely as we care for your furry, feathered, and scaled companions.</p>
+            <div class="last-updated">📅 Last Updated: June 4, 2026 • Effective from June 11, 2026</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="privacy-card">
+            <!-- Table of Contents for easy navigation -->
+            <div class="table-of-contents">
+                <h3>🐾 Privacy Compass (Jump to Section)</h3>
+                <div class="toc-grid">
+                    <a href="#infoCollect">1. Information We Collect</a>
+                    <a href="#usageData">2. How We Use Your Data</a>
+                    <a href="#sharing">3. Sharing & Disclosure</a>
+                    <a href="#cookiesTech">4. Cookies & Tracking</a>
+                    <a href="#dataSecurity">5. Data Security & Retention</a>
+                    <a href="#yourRights">6. Your Privacy Rights</a>
+                    <a href="#children">7. Children’s Privacy</a>
+                    <a href="#international">8. International Transfers</a>
+                    <a href="#policyUpdates">9. Policy Updates</a>
+                    <a href="#contactPrivacy">10. Contact Our Privacy Team</a>
+                </div>
+            </div>
+
+            <!-- Section 1: Information We Collect -->
+            <div id="infoCollect" class="privacy-section">
+                <h2>🐕 1. Information We Collect</h2>
+                <p><strong>Kind Creature World</strong> respects your privacy. We collect information to provide better pet care services, improve our website, and communicate with our compassionate community. The types of data we gather include:</p>
+                <ul>
+                    <li><strong>Personal identifiers:</strong> Name, email address, phone number, mailing address (when you contact us, sign up for newsletters, adopt, or request vet assistance).</li>
+                    <li><strong>Pet-related details:</strong> Pet type, breed, age, health concerns (only if voluntarily shared via forms, consultations, or support tickets).</li>
+                    <li><strong>Payment & transaction data:</strong> If you purchase our grey & yellow product line or donate, we collect billing information via secure PCI-compliant gateways — we never store full card details.</li>
+                    <li><strong>Technical data:</strong> IP address, browser type, device identifiers, pages visited, and referral source (via analytics tools).</li>
+                    <li><strong>Communication history:</strong> Records of emails, chat messages, helpline calls for service quality and training.</li>
+                </ul>
+                <div class="highlight-box">
+                    <strong>✨ Our promise:</strong> We never sell your personal information to third parties. Your data fuels kindness, not profit extraction.
+                </div>
+            </div>
+
+            <!-- Section 2: Usage -->
+            <div id="usageData" class="privacy-section">
+                <h2>📋 2. How We Use Your Information</h2>
+                <p>Your data helps us build a safer, more loving world for pets and their humans. Typical uses include:</p>
+                <ul>
+                    <li>Responding to contact form inquiries, emergency support requests, or partnership proposals.</li>
+                    <li>Processing donations, orders, or event registrations for adoption fairs & educational workshops.</li>
+                    <li>Sending updates about pet health tips, product recalls, or “Yellow Paw” community events (only if you opt-in).</li>
+                    <li>Improving website functionality, personalizing user experience, and preventing fraud.</li>
+                    <li>Conducting internal research about pet wellness trends (data aggregated and anonymized).</li>
+                </ul>
+                <p>We may also use your email to send important service announcements (e.g., security updates, changes to this policy). You can unsubscribe from marketing messages anytime.</p>
+            </div>
+
+            <!-- Section 3: Sharing & Disclosure -->
+            <div id="sharing" class="privacy-section">
+                <h2>🤝 3. Sharing & Disclosure</h2>
+                <p>We only share your personal information in limited circumstances and with strict safeguards:</p>
+                <ul>
+                    <li><strong>Service providers:</strong> Trusted partners who help operate our website, process payments, send emails, or manage customer support. They are bound by confidentiality agreements.</li>
+                    <li><strong>Veterinary & emergency partners:</strong> When you use our 24/7 helpline, necessary health data may be shared with licensed vet professionals to provide accurate triage.</li>
+                    <li><strong>Legal compliance:</strong> If required by law, court order, or to protect the safety of Kind Creature World, users, or animals.</li>
+                    <li><strong>Business transitions:</strong> In case of merger or acquisition, your data will be transferred under the same privacy commitments.</li>
+                </ul>
+                <p>We never rent, sell, or trade your personal data for marketing purposes. Any third-party access is strictly controlled.</p>
+            </div>
+
+            <!-- Section 4: Cookies & Tracking Tech -->
+            <div id="cookiesTech" class="privacy-section">
+                <h2>🍪 4. Cookies & Similar Technologies</h2>
+                <p>Our website uses cookies and tracking pixels to enhance your experience and analyze traffic. Cookies help remember your preferences (e.g., language, pet type filters).</p>
+                <ul>
+                    <li><strong>Essential cookies:</strong> Required for navigation and secure forms.</li>
+                    <li><strong>Analytics cookies:</strong> We use first-party analytics (like privacy-focused Plausible or anonymized Google Analytics settings) to understand page performance — always without identifying individual visitors.</li>
+                    <li><strong>Preference cookies:</strong> Remember your choices such as “hide emergency banner” or font size.</li>
+                </ul>
+                <p>You can manage cookie preferences via browser settings. However, disabling essential cookies may affect form submission. For full details, see our <a href="cookies.html" style="color: var(--yellow-deep);">Cookie Policy</a>.</p>
+            </div>
+
+            <!-- Section 5: Security & Retention -->
+            <div id="dataSecurity" class="privacy-section">
+                <h2>🔒 5. Data Security & Retention</h2>
+                <p>We implement industry-standard safeguards: encryption (TLS 1.3), restricted access databases, routine vulnerability scans, and employee training. Your information is stored on secure servers with 24/7 monitoring.</p>
+                <p><strong>Retention periods:</strong> We keep personal data only as long as necessary to fulfill the purposes outlined in this policy. For example:</p>
+                <ul>
+                    <li>Contact form inquiries: 3 years after last interaction.</li>
+                    <li>Transaction records: 7 years for tax/accounting compliance.</li>
+                    <li>Pet health consultation notes: anonymized after 2 years.</li>
+                </ul>
+                <p>If you request deletion, we will erase or de-identify your data unless retention is required by law.</p>
+            </div>
+
+            <!-- Section 6: Your Privacy Rights -->
+            <div id="yourRights" class="privacy-section">
+                <h2>📌 6. Your Privacy Rights (CCPA, GDPR & more)</h2>
+                <p>Depending on your location, you may have the following rights regarding your personal data:</p>
+                <ul>
+                    <li><strong>Right to know & access:</strong> Request a copy of the personal information we hold about you.</li>
+                    <li><strong>Right to correction:</strong> Update inaccurate or incomplete data.</li>
+                    <li><strong>Right to deletion:</strong> Ask us to delete your personal information, subject to exceptions.</li>
+                    <li><strong>Right to opt-out of “sale/sharing”:</strong> We do not sell data, but you may still control targeted ads via cookie preferences.</li>
+                    <li><strong>Right to data portability:</strong> Receive a machine-readable copy of your data.</li>
+                    <li><strong>Right to withdraw consent:</strong> For any processing based on consent (e.g., marketing emails).</li>
+                </ul>
+                <p>To exercise your rights, please contact us via the email or phone number in Section 10. We will respond within 30 days and never discriminate against you for exercising privacy rights.</p>
+            </div>
+
+            <!-- Section 7: Children’s Privacy -->
+            <div id="children" class="privacy-section">
+                <h2>🧸 7. Children’s Privacy</h2>
+                <p>Kind Creature World is a family-friendly platform, but we do not knowingly collect personal information from children under 13 without verifiable parental consent. If you believe your child has provided us with data without consent, please contact us immediately. For teen users (13-18), we encourage involvement of a parent or guardian when submitting contact forms or participating in events.</p>
+            </div>
+
+            <!-- Section 8: International Transfers -->
+            <div id="international" class="privacy-section">
+                <h2>🌍 8. International Data Transfers</h2>
+                <p>Our headquarters are in the United States, but we serve pet families worldwide. If you access our website from outside the US, your information may be transferred to, stored, and processed in the US or other countries. We ensure appropriate safeguards (Standard Contractual Clauses or equivalent) are in place for data transfers from the EEA, UK, or Switzerland. By using our services, you acknowledge such transfers when necessary.</p>
+            </div>
+
+            <!-- Section 9: Policy Updates -->
+            <div id="policyUpdates" class="privacy-section">
+                <h2>📢 9. Updates to This Privacy Policy</h2>
+                <p>We may revise this Privacy Policy from time to time to reflect changes in legal requirements, our data practices, or operational needs. The “Last Updated” date at the top of this page indicates when the latest version was published. For material changes, we will notify you via email (if you have an account) or through a prominent notice on our website. Your continued use of the website after updates constitutes acceptance of the revised policy.</p>
+            </div>
+
+            <!-- Section 10: Contact for privacy matters -->
+            <div id="contactPrivacy" class="privacy-section">
+                <h2>📧 10. Contact Our Privacy Team</h2>
+                <p>If you have questions about this Privacy Policy, wish to exercise your data rights, or report a potential privacy incident, please reach out to our dedicated Data Protection Officer (DPO). We’re here to help — with kindness and clarity.</p>
+                <div class="contact-ref">
+                    <p>🐕 <strong>Kind Creature World – Privacy Office</strong></p>
+                    <p>📍 123 Harmony Lane, Suite 400, San Francisco, CA 94103, USA</p>
+                    <p>📧 <a href="mailto:privacy@kindcreatureworld.com">privacy@kindcreatureworld.com</a> – For all data protection requests</p>
+                    <p>📞 <a href="tel:+15551234567">+1 (555) 123-4567</a> (Ask for Privacy Team, Mon-Fri 9am-5pm PST)</p>
+                    <p>🔐 For urgent security concerns: security@kindcreatureworld.com (PGP key available upon request)</p>
+                </div>
+                <p style="margin-top: 16px;">You also have the right to lodge a complaint with your local supervisory authority if you believe your data protection rights have been violated.</p>
+            </div>
+
+            <hr>
+            <div style="background: var(--grey-50); border-radius: 28px; padding: 20px 28px; margin-top: 20px;">
+                <p style="font-size: 0.9rem; display: flex; gap: 12px; flex-wrap: wrap; align-items: center; justify-content: space-between;"><span>⭐ <strong>Transparency is part of our grey & yellow ethos.</strong> We update policies to reflect our commitment to ethical data handling. Last review conducted by internal paws & legal experts.</span> <span>🐾</span></p>
+            </div>
+        </div>
+
+        <!-- Additional reassuring banner with direct links to contact and forms -->
+        <div style="background: linear-gradient(115deg, #F5B04210 0%, #F5F5F5 100%); border-radius: 36px; padding: 28px 36px; margin-bottom: 70px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px;">
+            <div>
+                <h3 style="font-size: 1.5rem; font-weight: 700;">🐕 Have a privacy question?</h3>
+                <p style="max-width: 560px;">Our data protection team responds within 2 business days. You can also manage cookie preferences or request your data export.</p>
+            </div>
+            <div style="display: flex; gap: 16px;">
+                <a href="contact.html" style="background: var(--grey-900); color: var(--yellow-primary); padding: 12px 28px; border-radius: 60px; text-decoration: none; font-weight: 600;">General Contact</a>
+                <a href="mailto:privacy@kindcreatureworld.com" style="background: var(--yellow-primary); color: #1E1E1E; padding: 12px 28px; border-radius: 60px; text-decoration: none; font-weight: 600;">Email Privacy Team</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <h3>KIND CREATURE WORLD</h3>
+                <p style="max-width: 280px; margin-top: 12px;">Compassion in action — elevating pet wellness with grey stability & yellow joy. Est. 2019.</p>
+                <p style="margin-top: 16px;">🐶🐱🐰🐦</p>
+            </div>
+            <div class="footer-contact">
+                <p><strong>📍 Kind Creature World Headquarters</strong></p>
+                <p>123 Harmony Lane, Suite 400<br>San Francisco, CA 94103, USA</p>
+                <p><strong>📞 24/7 Pet Care Helpline:</strong> <a href="tel:+15551234567" style="color: var(--yellow-primary); text-decoration: none;">+1 (555) 123-4567</a></p>
+                <p><strong>📧 hello@kindcreatureworld.com</strong></p>
+                <p><strong>🕒 Mon–Sun: 8am – 10pm (Emergency always open)</strong></p>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2026 Kind Creature World — Grey & Yellow Pet Care. All images used responsibly. Compassion above all. 
+            <br>Your privacy matters: <a href="privacy.html" style="color: var(--yellow-primary);">Read our Privacy Policy</a> | <a href="cookies.html" style="color: var(--yellow-primary);">Cookie Preferences</a>
+        </div>
+    </div>
+</footer>
+
+<!-- Smooth scrolling for anchor links -->
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href');
+            if (targetId === "#" || targetId === "") return;
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                e.preventDefault();
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+                // update URL without reload (optional)
+                history.pushState(null, null, targetId);
+            }
+        });
+    });
+</script>
+</body>
+</html>

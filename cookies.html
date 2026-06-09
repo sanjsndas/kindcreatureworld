@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Cookie Policy | Kind Creature World – Grey & Yellow Pet Care</title>
+    <!-- Google Fonts & Smooth Scroll -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F5F5F5;
+            color: #1E1E1E;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            --grey-50: #FAFAFA;
+            --grey-100: #F0F0F0;
+            --grey-200: #E0E0E0;
+            --grey-300: #C0C0C0;
+            --grey-700: #4A4A4A;
+            --grey-800: #2C2C2C;
+            --grey-900: #1A1A1A;
+            --yellow-primary: #F5B042;
+            --yellow-deep: #E69500;
+            --yellow-soft: #FFE8C7;
+            --shadow-sm: 0 12px 30px rgba(0,0,0,0.05);
+            --shadow-md: 0 20px 35px -12px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 28px;
+        }
+
+        /* Header */
+        header {
+            background: var(--grey-900);
+            border-bottom: 4px solid var(--yellow-primary);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .nav-bar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 0;
+        }
+
+        .logo h1 {
+            color: var(--yellow-primary);
+            font-size: 1.8rem;
+            letter-spacing: -0.5px;
+            font-weight: 700;
+        }
+        .logo span {
+            color: #E0E0E0;
+            font-weight: 400;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            color: #EAEAEA;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+        .nav-links a:hover {
+            color: var(--yellow-primary);
+        }
+
+        /* Page header */
+        .page-header {
+            background: linear-gradient(135deg, #2A2A2A 0%, #1F1F1F 100%);
+            padding: 48px 0 56px;
+            text-align: center;
+        }
+        .page-header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            color: white;
+            letter-spacing: -0.02em;
+        }
+        .page-header h1 span {
+            color: var(--yellow-primary);
+        }
+        .page-header p {
+            color: #CFCFCF;
+            font-size: 1.2rem;
+            margin-top: 12px;
+            max-width: 720px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .last-updated {
+            background: rgba(245,176,66,0.12);
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 60px;
+            font-size: 0.85rem;
+            margin-top: 20px;
+            color: var(--yellow-primary);
+        }
+
+        /* Cookie card layout */
+        .cookie-card {
+            background: white;
+            border-radius: 48px;
+            padding: 48px 52px;
+            margin: 60px 0 70px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--grey-200);
+        }
+        .cookie-section {
+            margin-bottom: 48px;
+            scroll-margin-top: 100px;
+        }
+        .cookie-section h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--grey-900);
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-left: 5px solid var(--yellow-primary);
+            padding-left: 20px;
+        }
+        .cookie-section h3 {
+            font-size: 1.35rem;
+            font-weight: 600;
+            margin: 24px 0 12px 0;
+            color: var(--grey-800);
+        }
+        .cookie-section p {
+            margin-bottom: 16px;
+            color: var(--grey-700);
+            line-height: 1.6;
+        }
+        .cookie-section ul, .cookie-section ol {
+            margin: 16px 0 20px 28px;
+            color: var(--grey-700);
+        }
+        .cookie-section li {
+            margin-bottom: 8px;
+        }
+        .highlight-box {
+            background: var(--yellow-soft);
+            padding: 24px 28px;
+            border-radius: 28px;
+            margin: 28px 0;
+            border-left: 6px solid var(--yellow-primary);
+        }
+        .table-of-contents {
+            background: var(--grey-100);
+            border-radius: 32px;
+            padding: 28px 32px;
+            margin-bottom: 48px;
+        }
+        .table-of-contents h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 18px;
+            color: var(--grey-900);
+        }
+        .toc-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px 28px;
+        }
+        .toc-grid a {
+            color: var(--grey-800);
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px dotted var(--grey-300);
+            transition: 0.2s;
+        }
+        .toc-grid a:hover {
+            color: var(--yellow-deep);
+            border-bottom-color: var(--yellow-deep);
+        }
+        hr {
+            margin: 28px 0;
+            border: none;
+            height: 2px;
+            background: linear-gradient(90deg, var(--yellow-primary), var(--grey-300), transparent);
+        }
+        /* Cookie Preference Manager Panel */
+        .pref-manager {
+            background: var(--grey-50);
+            border-radius: 32px;
+            padding: 24px 30px;
+            margin: 40px 0 20px;
+            border: 1px solid var(--grey-200);
+            box-shadow: var(--shadow-sm);
+        }
+        .pref-manager h3 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--grey-900);
+        }
+        .cookie-option {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 16px 0;
+            border-bottom: 1px solid var(--grey-200);
+        }
+        .cookie-option:last-child {
+            border-bottom: none;
+        }
+        .cookie-option-text {
+            flex: 1;
+        }
+        .cookie-option-text strong {
+            font-size: 1.1rem;
+            display: block;
+            margin-bottom: 4px;
+        }
+        .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 54px;
+            height: 28px;
+            margin-left: 20px;
+        }
+        .toggle-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: 0.3s;
+            border-radius: 34px;
+        }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 22px;
+            width: 22px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            transition: 0.3s;
+            border-radius: 50%;
+        }
+        input:checked + .slider {
+            background-color: var(--yellow-primary);
+        }
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+        input:disabled + .slider {
+            background-color: #b0a790;
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        .save-preferences {
+            background: var(--grey-900);
+            color: var(--yellow-primary);
+            border: none;
+            padding: 12px 32px;
+            border-radius: 40px;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 24px;
+            transition: 0.2s;
+        }
+        .save-preferences:hover {
+            background: var(--yellow-deep);
+            color: #1E1E1E;
+        }
+        .contact-ref {
+            background: var(--grey-900);
+            border-radius: 32px;
+            padding: 28px 32px;
+            color: #f0f0f0;
+            margin-top: 40px;
+        }
+        .contact-ref a {
+            color: var(--yellow-primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        footer {
+            background: var(--grey-900);
+            color: #b0b0b0;
+            padding: 48px 0 32px;
+            border-top: 3px solid var(--yellow-primary);
+        }
+        .footer-inner {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+        }
+        .footer-brand h3 {
+            color: var(--yellow-primary);
+            font-size: 1.7rem;
+        }
+        .footer-contact {
+            background: #222;
+            padding: 20px 28px;
+            border-radius: 24px;
+        }
+        .footer-contact p {
+            margin: 12px 0;
+            font-size: 1.05rem;
+        }
+        .footer-contact strong {
+            color: var(--yellow-primary);
+        }
+        .copyright {
+            text-align: center;
+            padding-top: 40px;
+            margin-top: 30px;
+            border-top: 1px solid #333;
+            font-size: 0.85rem;
+        }
+        @media (max-width: 780px) {
+            .nav-links { gap: 1rem; }
+            .page-header h1 { font-size: 2.2rem; }
+            .cookie-card { padding: 28px 20px; }
+            .container { padding: 0 20px; }
+            .cookie-section h2 { font-size: 1.5rem; }
+            .cookie-option { flex-direction: column; align-items: flex-start; gap: 12px; }
+            .toggle-switch { margin-left: 0; }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="nav-bar">
+            <div class="logo"><h1>KIND <span>CREATURE WORLD</span></h1></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="terms.html">Terms Of Privacy</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="cookies.html" style="color: #F5B042;">Cookies Policy</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="page-header">
+        <div class="container">
+            <h1>Cookie <span>Policy</span></h1>
+            <p>Transparent, ethical cookie usage. We respect your digital paws-print and give you full control over your browsing experience.</p>
+            <div class="last-updated">🍪 Last Updated: June 4, 2026 • Effective from June 11, 2026</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="cookie-card">
+            <!-- Table of contents -->
+            <div class="table-of-contents">
+                <h3>🐾 Cookie Compass (Jump to Section)</h3>
+                <div class="toc-grid">
+                    <a href="#whatAreCookies">1. What are Cookies?</a>
+                    <a href="#howWeUse">2. How We Use Cookies</a>
+                    <a href="#cookieTypes">3. Types of Cookies We Use</a>
+                    <a href="#thirdParty">4. Third-Party Cookies</a>
+                    <a href="#manageCookies">5. Manage Your Preferences</a>
+                    <a href="#prefManager">6. Cookie Consent Manager</a>
+                    <a href="#policyUpdatesCookie">7. Policy Updates</a>
+                    <a href="#contactCookie">8. Contact Us</a>
+                </div>
+            </div>
+
+            <!-- Section 1 -->
+            <div id="whatAreCookies" class="cookie-section">
+                <h2>🍪 1. What Are Cookies?</h2>
+                <p>Cookies are small text files stored on your device (computer, tablet, or smartphone) when you visit websites. They help us remember your actions and preferences (like login details, language, font size, and pet care filters) so you don’t have to re-enter them on every visit. At <strong>Kind Creature World</strong>, we use cookies to make your experience smoother, more personal, and secure—just like a warm blanket for your digital journey.</p>
+                <div class="highlight-box">
+                    <strong>🐕 Transparency first:</strong> We never use cookies to collect sensitive personal data without your explicit consent. Your trust is our guiding star.
+                </div>
+            </div>
+
+            <!-- Section 2: How we use cookies -->
+            <div id="howWeUse" class="cookie-section">
+                <h2>📌 2. How We Use Cookies</h2>
+                <p>We utilize cookies for several essential and optional purposes:</p>
+                <ul>
+                    <li><strong>Essential functionality:</strong> Enable core features like secure account access, donation forms, and pet health toolkit.</li>
+                    <li><strong>Performance & analytics:</strong> Understand how visitors interact with our grey & yellow pages, which adoption stories are most loved, and improve site speed.</li>
+                    <li><strong>Preferences & personalization:</strong> Remember your language, preferred pet content (cats, dogs, exotic pets), and accessibility settings.</li>
+                    <li><strong>Security:</strong> Help detect fraudulent activity and protect our community from bots or abuse.</li>
+                </ul>
+                <p>We do <strong>not</strong> use cookies to serve cross-site behavioral advertising based on sensitive health or pet data. Any marketing-related tracking is strictly opt-in.</p>
+            </div>
+
+            <!-- Section 3: Types of cookies with nice table style -->
+            <div id="cookieTypes" class="cookie-section">
+                <h2>📋 3. Detailed Cookie Categories</h2>
+                <p>The table below explains the specific cookies we may place and your control over them.</p>
+                <div style="overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse; background: var(--grey-50); border-radius: 24px;">
+                        <thead style="background: var(--grey-200);">
+                            <tr><th style="padding: 14px; text-align: left;">Category</th><th style="padding: 14px; text-align: left;">Examples</th><th style="padding: 14px; text-align: left;">Duration</th><th style="padding: 14px; text-align: left;">User Control</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid var(--grey-300);"><td style="padding: 12px;"><strong>Strictly Necessary</strong></td><td style="padding: 12px;">session_id, csrf_token, secure_cart</td><td style="padding: 12px;">Session / up to 1 day</td><td style="padding: 12px;">Cannot be disabled (essential for site operation)</td></tr>
+                            <tr style="border-bottom: 1px solid var(--grey-300);"><td style="padding: 12px;"><strong>Functional/Preference</strong></td><td style="padding: 12px;">pet_favorites, language_choice, contrast_mode</td><td style="padding: 12px;">6–12 months</td><td style="padding: 12px;">Opt-out via manager below</td></tr>
+                            <tr style="border-bottom: 1px solid var(--grey-300);"><td style="padding: 12px;"><strong>Analytics (Anonymous)</strong></td><td style="padding: 12px;">_ga (privacy-forward), plausible_event</td><td style="padding: 12px;">up to 14 months</td><td style="padding: 12px;">Opt-out toggle available</td></tr>
+                            <tr><td style="padding: 12px;"><strong>Marketing/Advertising</strong></td><td style="padding: 12px;">We do NOT run third-party ads; future campaigns will be strictly opt-in.</td><td style="padding: 12px;">—</td><td style="padding: 12px;">Requires explicit consent (never default)</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p style="margin-top: 16px;">We regularly audit our cookie inventory. No cookie is ever used to sell your data or track you outside our domain without consent.</p>
+            </div>
+
+            <!-- Section 4: Third-party cookies -->
+            <div id="thirdParty" class="cookie-section">
+                <h2>🌐 4. Third-Party Cookies & Partners</h2>
+                <p>Certain features on our website rely on trusted third-party services that may place cookies. These include:</p>
+                <ul>
+                    <li><strong>Payment processors:</strong> Stripe / PayPal — cookies to enable secure checkout (strictly functional).</li>
+                    <li><strong>Customer support widgets:</strong> Help Scout or similar — improve chat experience.</li>
+                    <li><strong>Analytics partners:</strong> Self-hosted Plausible or anonymized Google Analytics 4 (IP masking enabled, no data sharing).</li>
+                </ul>
+                <p>We require all third parties to respect data protection laws and sign data processing agreements. You can block third-party cookies via browser settings, but it may affect certain features (e.g., live chat).</p>
+            </div>
+
+            <!-- Section 5: Manage preferences + Interactive manager -->
+            <div id="manageCookies" class="cookie-section">
+                <h2>⚙️ 5. How to Manage & Delete Cookies</h2>
+                <p>You have full authority over cookies. You can:</p>
+                <ul>
+                    <li>Adjust your preferences using the <strong>Cookie Consent Manager</strong> below (real-time control).</li>
+                    <li>Change browser settings: most browsers allow you to block all cookies, delete existing ones, or alert you before a cookie is stored.</li>
+                    <li>Opt-out of analytics cookies by toggling the "Analytics" option in our manager — this will set a “do-not-track” preference.</li>
+                </ul>
+                <p>Please note that disabling essential cookies may affect core website functions such as forms, adoption applications, and donation processing.</p>
+            </div>
+
+            <!-- Section 6: Interactive preference manager with JS (live cookie setting simulation) -->
+            <div id="prefManager" class="pref-manager">
+                <h3>🐕 Your Cookie Preference Center</h3>
+                <p>Customize your cookie experience. Your choices will be saved locally and respected on future visits.</p>
+                <div class="cookie-option">
+                    <div class="cookie-option-text">
+                        <strong>✅ Strictly Necessary Cookies</strong>
+                        <span style="font-size: 0.85rem;">Required for security, login, forms & payments. Cannot be disabled.</span>
+                    </div>
+                    <div class="toggle-switch">
+                        <input type="checkbox" id="necessaryToggle" checked disabled>
+                        <span class="slider"></span>
+                    </div>
+                </div>
+                <div class="cookie-option">
+                    <div class="cookie-option-text">
+                        <strong>🎨 Functional & Personalization Cookies</strong>
+                        <span style="font-size: 0.85rem;">Remember your preferences (pet type filters, color theme, language).</span>
+                    </div>
+                    <div class="toggle-switch">
+                        <input type="checkbox" id="functionalToggle" checked>
+                        <span class="slider"></span>
+                    </div>
+                </div>
+                <div class="cookie-option">
+                    <div class="cookie-option-text">
+                        <strong>📊 Analytics Cookies (Anonymous)</strong>
+                        <span style="font-size: 0.85rem;">Help us understand traffic and improve content (no personal IDs).</span>
+                    </div>
+                    <div class="toggle-switch">
+                        <input type="checkbox" id="analyticsToggle" checked>
+                        <span class="slider"></span>
+                    </div>
+                </div>
+                <div class="cookie-option">
+                    <div class="cookie-option-text">
+                        <strong>🎯 Marketing / Advertising Cookies</strong>
+                        <span style="font-size: 0.85rem;">We currently don't run ads, but if we ever do, this toggle will require opt-in.</span>
+                    </div>
+                    <div class="toggle-switch">
+                        <input type="checkbox" id="marketingToggle" disabled>
+                        <span class="slider" style="background-color:#b0a790;"></span>
+                    </div>
+                </div>
+                <button class="save-preferences" id="saveCookiePrefsBtn">💾 Save My Cookie Preferences</button>
+                <p style="font-size: 0.8rem; margin-top: 18px;"><span id="prefFeedback" style="color: var(--yellow-deep);"></span></p>
+                <p style="font-size: 0.75rem; margin-top: 10px;">Your preferences are stored via localStorage and a preference cookie. You can change anytime using this panel.</p>
+            </div>
+
+            <!-- Section 7: Policy updates -->
+            <div id="policyUpdatesCookie" class="cookie-section">
+                <h2>📢 7. Updates To This Cookie Policy</h2>
+                <p>We may adjust our cookie usage in line with legal requirements or new features. Any material change will be communicated via a banner on our website and this page will be updated with a fresh "Last Updated" date. Your continued use implies acceptance of the revised policy, but we will always ask for explicit consent before introducing new non-essential cookie categories.</p>
+            </div>
+
+            <!-- Section 8: Contact -->
+            <div id="contactCookie" class="cookie-section">
+                <h2>📧 8. Cookie-Related Inquiries</h2>
+                <p>If you have any questions regarding our use of cookies, wish to access your cookie logs, or require assistance with the preference manager, please contact our Data Protection Team:</p>
+                <div class="contact-ref">
+                    <p>🍪 <strong>Kind Creature World – Cookie Compliance</strong></p>
+                    <p>📍 123 Harmony Lane, Suite 400, San Francisco, CA 94103</p>
+                    <p>📧 <a href="mailto:privacy@kindcreatureworld.com">privacy@kindcreatureworld.com</a> (put "COOKIE QUERY" in subject)</p>
+                    <p>📞 <a href="tel:+15551234567">+1 (555) 123-4567</a> (Ask for Privacy Team)</p>
+                </div>
+                <p>For more details on overall data handling, please check our <a href="privacy.html" style="color: var(--yellow-deep); font-weight: 500;">Privacy Policy</a>.</p>
+            </div>
+
+            <hr>
+            <div style="background: var(--grey-50); border-radius: 28px; padding: 18px 24px;">
+                <p style="font-size: 0.85rem;">✨ <strong>Our Pledge:</strong> We use cookies ethically and follow ePrivacy Directive & GDPR guidelines. No nasty surprises — just kindness and transparency.</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <h3>KIND CREATURE WORLD</h3>
+                <p style="max-width: 280px; margin-top: 12px;">Compassion in action — elevating pet wellness with grey stability & yellow joy. Est. 2019.</p>
+                <p style="margin-top: 16px;">🐶🐱🐰🐦</p>
+            </div>
+            <div class="footer-contact">
+                <p><strong>📍 Kind Creature World Headquarters</strong></p>
+                <p>123 Harmony Lane, Suite 400<br>San Francisco, CA 94103, USA</p>
+                <p><strong>📞 24/7 Pet Care Helpline:</strong> <a href="tel:+15551234567" style="color: var(--yellow-primary); text-decoration: none;">+1 (555) 123-4567</a></p>
+                <p><strong>📧 hello@kindcreatureworld.com</strong></p>
+                <p><strong>🕒 Mon–Sun: 8am – 10pm (Emergency always open)</strong></p>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2026 Kind Creature World — Grey & Yellow Pet Care. All images used responsibly. Compassion above all. 
+            <br>🍪 Manage cookies via our <a href="cookies.html" style="color: var(--yellow-primary);">Cookie Policy</a> | <a href="privacy.html" style="color: var(--yellow-primary);">Privacy Policy</a>
+        </div>
+    </div>
+</footer>
+
+<!-- Interactive preference manager script -->
+<script>
+    // Load preferences from localStorage on page load
+    function loadPreferences() {
+        const functionalPref = localStorage.getItem('kcw_functional_cookies');
+        const analyticsPref = localStorage.getItem('kcw_analytics_cookies');
+        if (functionalPref !== null) {
+            document.getElementById('functionalToggle').checked = functionalPref === 'true';
+        }
+        if (analyticsPref !== null) {
+            document.getElementById('analyticsToggle').checked = analyticsPref === 'true';
+        }
+    }
+
+    // Save preferences and show feedback + simulate cookie consent update
+    function savePreferences() {
+        const functionalChecked = document.getElementById('functionalToggle').checked;
+        const analyticsChecked = document.getElementById('analyticsToggle').checked;
+        
+        localStorage.setItem('kcw_functional_cookies', functionalChecked);
+        localStorage.setItem('kcw_analytics_cookies', analyticsChecked);
+        
+        // Actually apply analytics consent (simulation: can also set a dummy cookie to reflect consent)
+        document.cookie = "kcw_analytics_consent=" + analyticsChecked + "; path=/; max-age=31536000";
+        document.cookie = "kcw_functional_consent=" + functionalChecked + "; path=/; max-age=31536000";
+        
+        const feedbackEl = document.getElementById('prefFeedback');
+        feedbackEl.innerHTML = "✅ Your cookie preferences have been saved! Thank you for controlling your privacy.";
+        setTimeout(() => {
+            feedbackEl.innerHTML = "";
+        }, 3800);
+        
+        // Optional: trigger a console message to show that analytics would be disabled
+        if (!analyticsChecked) {
+            console.log("[Kind Creature World] Analytics cookies disabled — no tracking will be performed.");
+        } else {
+            console.log("[Kind Creature World] Analytics cookies enabled (anonymous only).");
+        }
+    }
+
+    document.getElementById('saveCookiePrefsBtn').addEventListener('click', savePreferences);
+    
+    // Also initialize any existing preferences on load
+    window.addEventListener('DOMContentLoaded', () => {
+        loadPreferences();
+        // Set initial cookies as per loaded state
+        const funcState = document.getElementById('functionalToggle').checked;
+        const analState = document.getElementById('analyticsToggle').checked;
+        document.cookie = "kcw_analytics_consent=" + analState + "; path=/; max-age=31536000";
+        document.cookie = "kcw_functional_consent=" + funcState + "; path=/; max-age=31536000";
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href');
+            if (targetId === "#" || targetId === "") return;
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                e.preventDefault();
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+                history.pushState(null, null, targetId);
+            }
+        });
+    });
+</script>
+</body>
+</html>
